@@ -8,19 +8,11 @@ Nine-Ta-Five is a user friendly simple UX/UI designed website where users can br
 -Data was compiled in a JSON format once scraped, built MongoDB database, and used Mongoose to make local API to use data in React
 
 # Getting Started
-Using:
--Node
--Mongo
--Robo 3t
--React and Redux
--Postman (optional)
--Mongoose
+Using: Node , Mongo , Robo 3t , React and Redux , Postman (optional) and Mongoose
 
-Mongo, Postman and Robo 3t were all downloaded from web
 -Run Mongo: ./mongod --dbpath ~/mongo-data
 
-All other dependencies are listed in the package.json file 
-run command: npm install
+-Run command: npm install
 
 cd into project folder
 command line: node backend/indeed-scraper.js  
