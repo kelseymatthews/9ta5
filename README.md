@@ -63,6 +63,29 @@ componentDidMount() {
 }
 ````
 
+# Pagination
+````
+this.state = {
+    currentPage: 1,
+    jobsPerPage: 25,
+    disableButton: false
+}
+
+const indexOfLastJob = this.state.currentPage * this.state.jobsPerPage;
+const indexOfFirstJob = indexOfLastJob - this.state.jobsPerPage;
+const currentJobs = this.props.jobResults.slice(indexOfFirstJob, indexOfLastJob);
+
+const pageNumbers = [];
+for (let i = 1; i <= Math.ceil(this.props.jobResults.length / this.state.jobsPerPage); i++) {
+    pageNumbers.push(i);
+}
+var buttonClasses = classNames({
+    'previous-page-button': true,
+    'btn': true,
+    'disabled': this.state.currentPage == 1
+});
+````
+        
 # Built With
 
 Cherrio , Node.js , React and Redux , Mongo and Mongoose
