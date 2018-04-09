@@ -2,22 +2,30 @@
 
 Nine-Ta-Five is a user friendly simple UX/UI designed website where users can browse through entry level software development jobs
 
-# Project Elements
--Webscraped entry-level software jobs from
- Dice.com, Indeed.com, and ZipRecruiter.com using node.
--Data was compiled in a JSON format once scraped, built MongoDB database, and used Mongoose to make local API to use data in React
+# Prerequisites 
+
+Mongo , Robo 3t  and  Postman (optional) 
 
 # Getting Started
-Using: Node , Mongo , Robo 3t , React and Redux , Postman (optional) and Mongoose
 
--Run Mongo: ./mongod --dbpath ~/mongo-data
+Run Mongo: ./mongod --dbpath ~/mongo-data
+````
+npm install
+````
+````
+node backend/indeed-scraper.js 
+````
+````
+node backend/dice-scraper.js 
+````
+````
+node backend/ziprecruiter-scraper.js
+````
+````
+npm start
+````
 
--Run command: npm install
+# Built With
 
-cd into project folder
-command line: node backend/indeed-scraper.js  
-command line: node backend/dice-scraper.js  
-command line: node backend/ziprecruiter-scraper.js  
-AFTER run npm start
+Cherrio , Node.js , React and Redux , Mongo and Mongoose
 
-Access site from localhost in browser
